@@ -26,12 +26,12 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-	10pt, % Default font size, can be between 8pt and 12pt
+	11pt, % Default font size, can be between 8pt and 12pt
 ]{FreemanCV}
 
 \usepackage[dutch]{babel}
 
-\columnratio{0.55, 0.45} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
+\columnratio{0.50, 0.50} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
 
 % Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
 % Example right footer:
@@ -40,126 +40,92 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+
 \begin{paracol}{2} % Begin two-column mode
 
 	%----------------------------------------------------------------------------------------
 	%	YOUR NAME AND CURRICULUM VITAE TITLE
 	%----------------------------------------------------------------------------------------
-
-	\parbox[][0.07\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
-
+	\parbox[][0.25\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
 		\centering % Horizontally center text
-
-		{\sffamily\Huge Raymon Sebastiaan Roos} % Your name
-
+		{\sffamily\Huge Raymon Roos} % Your name
 		\medskip % Vertical whitespace
 
+		\vspace{-5pt}
 		{\cursivefont\Large\textcolor{headings}{Curriculum Vitae}}
-
 		% \vfill % Push content to the top of the box
-	}
-
 	%----------------------------------------------------------------------------------------
 	%	YOUR PICTURE
 	%----------------------------------------------------------------------------------------
 
-	\begin{center}
-		\includegraphics[width=0.155\textwidth]{me_myself.jpg}
-	\end{center}
+		\begin{center}
+			\includegraphics[width=0.21\textwidth,origin=c]{me_myself.jpg}
+		\end{center}
+		\vspace{-15pt}
+	}
 
-	\section{Profiel}
+	\section{Over mij}
 
-	% \subsection{Goal Oriented}
+	\textbf{Ik ben...}\\
+	...van nature nauwkeurig en analytisch en zoek uitdagingen op. Ik heb een brede 
+	interesse, van computer software en hardware; tot online privacy, veiligheid en 
+	vrijheid; tot psychologie, filosofie en biologie.
 
-	Ik ben van nature erg kritisch en analytisch, als ik ergens een
-	probleem zie zal ik het niet nalaten dat aan te stippen. Ik heb een
-	brede interesse, van computer software en hardware; tot online privacy,
-	veiligheid en vrijheid; tot psychologie, filosofie en biologie. Ik heb
-	gedurende mijn tijd op het Technasium veel ervaring opgedaan in
-	samenwerken en wetenschappelijk denken. Verder wordt ik op mijn huidige
-	opleiding aan de Bit Academy klaargestoomd voor het actuele werkklimaat
-	in de Tech sector, door middel van praktische en relevante opdrachten
-	en projecten, het werken met Git en vooral het werken in een team.
+	\textbf{Ik heb geleerd...}\\
+	...over wetenschappelijk denken op het Technasium. Op mijn huidige opleiding aan de 
+	Bit Academy word ik klaargestoomd voor het actuele werkklimaat in de Tech sector, door 
+	middel van praktische en relevante opdrachten en projecten, het werken met Git en 
+	vooral het werken in een software team. 
 
-	In mijn vrije tijd hou ik mij bezig met het luisteren naar leerzame
-	video's, mijn computers naar mijn wensen configureren, luisteren naar
-	muziek, boeken lezen en programmeren.
-
-	Wat mij sterk maakt als software developer, is dat ik groot belang stel
-	aan de juiste werkwijze. Ik zal het niet nalaten de handleidingen te
-	lezen en mij uitgebreid te verdiepen wanneer ik met nieuwe onderwerpen
-	te maken krijg. Ik sta er dan ook om bekend erg grondig te zijn in mijn
-	werk en dat verwacht ik ook van mijn teamleden.
-
-	% \subsection{Physical Dexterity}
-
-	% Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.
-
-	% \subsection{Passionate}
-
-	% I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.
-
-
+	\textbf{Ik wil uitgedaagd worden...}\\
+	...in programmeren voor unieke projecten met een professioneel team, optimaal gebruik maken 
+	van Git, de ins en outs leren van frameworks zoals Laravel of Symphony en verdiepen in 
+	systeemgericht ontwerpen aan de hand van OOP en FP.
 
 	%----------------------------------------------------------------------------------------
 	%	SKILLS DESCRIPTION
 	%----------------------------------------------------------------------------------------
 
 	\section{Algemene Vaardigheden}
-
-	\subsection{Product gericht}
-
-	Ik ben kritisch en stel hoge eisen aan mijzelf. Dit zorgt ervoor dat ik
-	de kwaliteit van het product kan waarborgen. 
-
-	\subsection{Probleemoplossend vermogen}
-
-	Mijn lange ervaring met het werken met computers, zowel MS Windows als
-	GNU/Linux, zowel op privégebied als professioneel, stellen mij instaat
-	om problemen te troubleshooten en zelfstandig op te lossen.
-
-	\subsection{Samenwerking}
-
-	Mijn professionele houding stelt mij goed instaat om samen te werken
-	met andere mensen om tot een goed eindproduct te komen.
-
-	\subsection{Taalvaardig}
-
-	Naast van mijn beheersing van {\sffamily\small\textbf{Nederlands}} op
-	tenminste 3F-niveau spreek, schrijf en lees ik vloeiend
-	{\sffamily\small\textbf{Engels}}
+	\begin{itemize}
+		\item nauwkeurig
+		\item doelgericht
+		\item probleemoplossend vermogen
+		\item zelfstandig
+		\item taalvaardig
+			\begin{itemize}
+				\item \small Nederlands
+				\item \small Engels \normalsize 
+			\end{itemize}
+		\item loyaal
+	\end{itemize}
 
 	%----------------------------------------------------------------------------------------
 	%	COMPUTER SKILLS
 	%----------------------------------------------------------------------------------------
-
 	\section{Computervaardigheden}
 
 	% This section is laid out using a table. A \tableentry command adds
 	% lines with the following parameters:
-
 	%\tableentry{Heading}{Content}{spaceafter} All 3 parameters must be
 	%supplied but any can be empty if you don't need them A "spaceafter"
 	%value in the third parameter will add some vertical space -- this is
 	%to be used between headings, leave it empty for no extra space
-
 	%------------------------------------------------
-
 	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
 		%------------------------------------------------
-		\tableentry{Beginner}{JavaScript, \LaTeX, C, Lua, OOP}{}
-		\tableentry{}{\faDesktop Computer Hardware, TailWindCSS}{  }
+		\tableentry{Beginner}{JavaScript, \LaTeX, C, Lua,}{}
+		\tableentry{}{TailWindCSS}{  }
 
 		%------------------------------------------------
-		\tableentry{Intermediate}{MySQL, \faHtml5 HTML, \faCss3 CSS, MS/Libre Office}{  }
-		\tableentry{}{\faLinux GNU/Linux, \faGit GIT}{  }
+		\tableentry{Intermediate}{MySQL, \faHtml5 HTML, \faCss3 CSS,}{}
+		\tableentry{}{\faLinux GNU/Linux, \faGit GIT, OOP}{  }
 
 		%------------------------------------------------
-		\tableentry{Expert}{Microsoft Windows, PHP}{}
+		\tableentry{Expert}{PHP}{}
 
 		%------------------------------------------------
 	\end{supertabular}
-
 
 	% %----------------------------------------------------------------------------------------
 	% %	MAJOR RESEARCH PROJECT
@@ -221,11 +187,7 @@
 	% 	%------------------------------------------------
 
 	% \end{supertabular}
-
-	\medskip % Extra vertical whitespace before the next section
-
-
-
+	% \medskip % Extra vertical whitespace before the next section
 
 	% %----------------------------------------------------------------------------------------
 
@@ -235,96 +197,21 @@
 	%	COLORED CONTACT DETAILS BOX
 	%----------------------------------------------------------------------------------------
 
-	\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+	\parbox[top][0.14\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
 		\colorbox{shade}{ % Create colored box and specify background color
 			\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
 				\color{contactinfo}
-				\raisebox{-1pt}{\faHome} & Wegisweg 12, Verwegistan, 4567 AB \\ % Address
-				\raisebox{-1pt}{\faPhone} & +31 (0)6 12 345678 \\ % Phone number
-				\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:raymon.roos@student.rocva.nl}{raymon.roos@student.rocva.nl} \\ % Email address
+				\raisebox{-1pt}{\faHome} & Waver 40A, Ouderkerk a/d Amstel 1191 KJ \\ % Address
+				\raisebox{-1pt}{\faPhone} & +31 (0)6 31081991 \\ % Phone number
+				\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:raymon.roos@hotmail.com}{raymon.roos@hotmail.com} \\ % Email address
 				%\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
-				\raisebox{-1pt}{\faGithub} & \href{https://github.com/Raymanovich}{https://github.com/Raymanovich} \\ % GitHub profile
-				\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/raymon-roos-1840a7228/}{https://www.linkedin.com/in/raymon-roos} \\ % LinkedIn profile
+				\raisebox{-1pt}{\faGithub} & \href{https://github.com/Raymanovich}{github.com/Raymanovich} \\ % GitHub profile
+				\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/raymon-roos-1840a7228/}{linkedin.com/in/raymon-roos} \\ % LinkedIn profile
 				% See fontawesome.pdf in the Fonts folder for all icons you can use
 			\end{supertabular}
 		}
-		\vfill % Push content to the top of the box
+		% \vfill % Push content to the top of the box
 	}
-
-	%----------------------------------------------------------------------------------------
-	%	WORK EXPERIENCE
-	%----------------------------------------------------------------------------------------
-
-	\section{Werkervaring}
-
-	% Each job is added with a \jobentry command. Below is an empty one to use as a template:
-
-	%\jobentry
-	%	{} % Duration
-	%	{} % FT/PT (full time or part time)
-	%	{} % Employer
-	%	{} % Job title
-	%	{} % Description
-
-	% All 5 parameters must be supplied but any can be empty if you don't need them
-	%------------------------------------------------
-
-	\jobentry
-	{Aug 2018 -- heden} % Duration
-	{parttime} % FT/PT (full time or part time)
-	{Café-restaurant Bon} % Employer
-	{Keukenmedewerker} % Job title
-	{Mijn tijd bij Restaurant Bon werd gekenmerkt door flexibel omgaan met
-	    taken. Verantwoordelijkheden die mij onder andere werden
-	    toevertrouwd waren:
-		\begin{itemize}
-			\item bedienen frituur
-			\item voor- en nagerechten maken
-			\item ingrediënten voorbereiden
-			\item werkplek onderhouden
-			\item schoonmaken
-			\item hapjes uitdelen
-		\end{itemize}
-	} % Description
-	%------------------------------------------------
-
-	\jobentry
-	{Sep 2022 -- heden} % Duration
-	{parttime} % FT/PT (full time or part time)
-	{Bit Academy} % Employer
-	{Studentencoach} % Job title
-	{Als studentencoach op de Bit Academy, krijg ik de kans om de kennis
-	    die ik leer op mijn studie toe te passen, door andere studenten te
-	    begeleiden met hun werk. Tegelijkertijd heb ik elke dag weer de
-	    mogelijkheid te oefenen in essentiële soft skills, zoals
-	    communicatie.
-	} % Description
-	%------------------------------------------------
-
-	\jobentry
-	{2013 -- 2018} % Duration
-	{Projectmatig} % FT/PT (full time or part time)
-	{Diversen} % Employer
-	{Leerling aan het Technasium} % Job title
-	{Het Technasium is een profiel binnen het vwo-onderwijs waarin in
-	    groepsverband en samen met bedrijven projectmatig gewerkt wordt aan
-	    opdrachten voor deze bedrijven. Voorbeelden van zulke projecten zijn:
-		\raggedright
-		\begin{itemize}
-			\item Een nieuw dierenverblijf voor dierentuin Artis
-			\item Een kustwering met toegevoegde maatschappelijke waarde voor Ballast Nedam
-			\item Een implementatie van Urban Agriculture voor de gemeente van Amstelveen
-			\item Een methode voor publieke voorlichting over virussen voor Cirion
-		\end{itemize}
-	} % Description
-	% %------------------------------------------------
-
-	% \jobentry
-	% {Jul 1982 -- Dec 1984} % Duration
-	% {PT} % FT/PT (full time or part time)
-	% {WashPests Limited} % Employer
-	% {Pest Control Technician} % Job title
-	% {In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
 
 	%----------------------------------------------------------------------------------------
 	%	EDUCATION
@@ -348,7 +235,6 @@
 	\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
 
 		%------------------------------------------------
-
 		\qualificationentry
 		{2021 -- nu} % Duration
 		{Software Developer MBO Niv. 4} % Degree
@@ -357,26 +243,85 @@
 		{ROC van Amsterdam} % Institution
 
 		%------------------------------------------------
-
 		\qualificationentry
-		{2013 -- 2019} % Duration
+		{2013 -- 2020} % Duration
 		{VWO} % Degree
 		{Geen diploma} % Honors, achievements or distinctions (e.g. first class honors)
 		{Natuur en techniek/Natuur en Gezondheid} % Department
 		{Keizer Karel College - Amstelveen} % Institution
 
-		% %------------------------------------------------
-
-		% \qualificationentry
-		% {1982 -- 1984} % Duration
-		% {Bachelor of Physics} % Degree
-		% {} % Honors, achievements or distinctions (e.g. first class honors)
-		% {Department of Physics} % Department
-		% {The University of Washington} % Institution
-
-		% %------------------------------------------------
-
+		\qualificationentry
+		{ } % Duration
+		{Technasium Projecten:} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors)
+		{ } % Department
+		{ } % Institution
 	\end{supertabular}
+
+		\vspace{-28pt}
+		\small 
+		\begin{itemize}
+			\item nieuw dierenverblijf voor dierentuin Artis
+			\item kustwering met toegevoegde maatschappelijke waarde voor Ballast Nedam
+			\item implementatie van Urban Agriculture voor de gemeente van Amstelveen
+			\item methode voor publieke voorlichting over virussen voor Cirion
+		\end{itemize}
+		\normalsize
+
+	%----------------------------------------------------------------------------------------
+	%	WORK EXPERIENCE
+	%----------------------------------------------------------------------------------------
+	\section{Werkervaring}
+	% Each job is added with a \jobentry command. Below is an empty one to use as a template:
+	%\jobentry
+	%	{} % Duration
+	%	{} % FT/PT (full time or part time)
+	%	{} % Employer
+	%	{} % Job title
+	%	{} % Description
+	% All 5 parameters must be supplied but any can be empty if you don't need them
+
+	%------------------------------------------------
+	\jobentry
+	{Sep 2022 -- heden} % Duration
+	{} % FT/PT (full time or part time)
+	{Bit Academy} % Employer
+	{Studentencoach} % Job title
+	{Competenties:
+		\begin{itemize}
+			\item vragen beantwoorden
+			\item medestudenten helpen
+			\item technische problemen oplossen
+			\item uitleg geven
+		\end{itemize}
+	} % Description
+
+	%------------------------------------------------
+	\jobentry
+	{Aug 2018 -- sep 2022} % Duration
+	{} % FT/PT (full time or part time)
+	{Café-restaurant Bon} % Employer
+	{Keukenmedewerker} % Job title
+	{Competenties:
+		\begin{itemize}
+			\item voor- en nagerechten maken
+			\item ingrediënten voorbereiden
+			\item werkplek onderhouden
+			\item bedienen frituur
+			\item schoonmaken
+			\item hapjes uitdelen
+		\end{itemize}
+	} % Description
+
+	\section{Hobbies}
+
+	\begin{itemize}
+		\item lezen van klassieke literatuur en Science Fiction
+		\item luisteren naar Podcasts en infotainment
+		\item programmeren
+		\item muziek luisteren
+		\item computers en software configureren
+	\end{itemize}
 
 
 	% %----------------------------------------------------------------------------------------
