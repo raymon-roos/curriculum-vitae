@@ -1,3 +1,7 @@
-cv_raymon_roos.log
-cv_raymon_roos.synctex.gz
-cv_raymon-roos.xdv
+*
+!*.cls
+!*.pdf
+!*.tex
+!*.jpeg
+!*.png
+!*.bib
