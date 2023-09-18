@@ -78,7 +78,7 @@
 
 % The serif font used by default or explicitly with \textrm{}/\rmfamily
 \setmainfont{EBGaramond}[
-        UprightFont=*-Regular.ttf,
+	UprightFont=*-Regular.ttf,
 	BoldFont=*-Bold.ttf,
 	BoldItalicFont=*-BoldItalic.ttf,
 	ItalicFont=*-Italic.ttf,
